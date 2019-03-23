@@ -15,23 +15,22 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!\n')
-    print('Would you like to explore data for chicago, new york city or washington? please type the name of the city.')
+    print('Hello! Let\'s explore some US bikeshare data!\nWould you like to explore data for chicago, new york city or washington? please type the name of the city.')
     while True:
         city = input().lower().strip()
         if city == 'quit':
             quit()
-        if city in CITY_DATA:
+        elif city in CITY_DATA:
             break
         print('\nPlease enter a valid city name!\n ...or type \'quit\' to terminate program.')
-    print('\nwhould like to filter the data by month? please type \n\'january\', \n\'february\', \n\'march\', \n\'april\', \n\'may\', \n\'june\' \nor \'all\'')
+    print('\nwould like to filter the data by month? please type \n\'january\', \n\'february\', \n\'march\', \n\'april\', \n\'may\', \n\'june\' \nor \'all\'')
     while True:
         month = input().lower().strip()
         if month == 'all':
             break
-        if month in set(months):
+        elif month in set(months):
             break
-        if month == 'quit':
+        elif month == 'quit':
             quit()
         print('\nPlease type a valid month or \'all\'!\nOr, to terminate program, type \'quit\'.')
     print('\nwhould like to filter the data by day of the week? please type \n\'monday\', \n\'tuesday\', \n\'wednesday\', \n\'thursday\', \n\'friday\', \n\'saturday\', \n\'sunday\' \nor \'all\'')
@@ -39,9 +38,9 @@ def get_filters():
         day = input().lower().strip()
         if day == 'all':
             break
-        if day in days:
+        elif day in days:
             break
-        if day == 'quit':
+        elif day == 'quit':
             quit()
         print('\nplease type a valid day of the week or \'all\'!\nOr, to terminate program, type \'quit\'.')
     print('-'*40)
@@ -84,11 +83,11 @@ def raw_data(df):
         y_n = input().lower().strip()
         if y_n == 'no':
             break
-        if y_n == 'yes':
+        elif y_n == 'yes':
             print(df.head(n))
             n += 5
             print('\nWould you like to see five more lines of data?')
-        if y_n != 'yes' or 'no':
+        elif y_n != 'yes' or 'no':
             print('\nPlease enter \'yes\' or \'no\'')
 
 
