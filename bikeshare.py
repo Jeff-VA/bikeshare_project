@@ -72,7 +72,11 @@ def load_data(city, month, day):
 
 
 def raw_data(df):
-    """Displays five lines of raw data upon user request."""
+    """
+    Displays five lines of raw data upon user request.
+
+    User may request five more lines of data at a time for as many times as requested.
+    """
 
     print('\nWould you like to see five lines of raw data prior to calculating statistics? Please type \'yes\' or \'no\'')
     n =5
