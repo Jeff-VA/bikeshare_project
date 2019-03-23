@@ -20,7 +20,7 @@ def get_filters():
         city = input().lower().strip()
         if city == 'quit':
             quit()
-        if city in CITY_DATA:
+        elif city in CITY_DATA:
             break
         print('\nPlease enter a valid city name!\n ...or type \'quit\' to terminate program.')
     print('\nwould like to filter the data by month? please type \n\'january\', \n\'february\', \n\'march\', \n\'april\', \n\'may\', \n\'june\' \nor \'all\'')
@@ -38,9 +38,9 @@ def get_filters():
         day = input().lower().strip()
         if day == 'all':
             break
-        if day in days:
+        elif day in days:
             break
-        if day == 'quit':
+        elif day == 'quit':
             quit()
         print('\nplease type a valid day of the week or \'all\'!\nOr, to terminate program, type \'quit\'.')
     print('-'*40)
