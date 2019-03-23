@@ -15,8 +15,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!\n')
-    print('Would you like to explore data for chicago, new york city or washington? please type the name of the city.')
+    print('Hello! Let\'s explore some US bikeshare data!\nWould you like to explore data for chicago, new york city or washington? please type the name of the city.')
     while True:
         city = input().lower().strip()
         if city == 'quit':
@@ -24,14 +23,14 @@ def get_filters():
         if city in CITY_DATA:
             break
         print('\nPlease enter a valid city name!\n ...or type \'quit\' to terminate program.')
-    print('\nwhould like to filter the data by month? please type \n\'january\', \n\'february\', \n\'march\', \n\'april\', \n\'may\', \n\'june\' \nor \'all\'')
+    print('\nwould like to filter the data by month? please type \n\'january\', \n\'february\', \n\'march\', \n\'april\', \n\'may\', \n\'june\' \nor \'all\'')
     while True:
         month = input().lower().strip()
         if month == 'all':
             break
-        if month in set(months):
+        elif month in set(months):
             break
-        if month == 'quit':
+        elif month == 'quit':
             quit()
         print('\nPlease type a valid month or \'all\'!\nOr, to terminate program, type \'quit\'.')
     print('\nwhould like to filter the data by day of the week? please type \n\'monday\', \n\'tuesday\', \n\'wednesday\', \n\'thursday\', \n\'friday\', \n\'saturday\', \n\'sunday\' \nor \'all\'')
