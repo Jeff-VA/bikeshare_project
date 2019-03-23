@@ -16,7 +16,19 @@ Third, the program performs four statistical functions.
 Finally, the user may restart or exit the program.
 
 ### Files used
-Include the files used
+###### Python file tracked in remote and local repository:
+* bikeshare.py
+
+###### Untracked data files only in local repository:
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+###### Source for Pandas library:
+
+* https://pandas.pydata.org/pandas-docs/stable/index.html
+
+###### Source for python library:
+
+* https://docs.python.org/3/library/
