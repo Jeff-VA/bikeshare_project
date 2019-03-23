@@ -79,11 +79,11 @@ def raw_data(df):
         y_n = input().lower().strip()
         if y_n == 'no':
             break
-        if y_n == 'yes':
+        elif y_n == 'yes':
             print(df.head(n))
             n += 5
             print('\nWould you like to see five more lines of data?')
-        if y_n != 'yes' or 'no':
+        elif y_n != 'yes' or 'no':
             print('\nPlease enter \'yes\' or \'no\'')
 
 
