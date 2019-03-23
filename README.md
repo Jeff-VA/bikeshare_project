@@ -15,6 +15,8 @@ Third, the program performs four statistical functions.
 
 Finally, the user may restart or exit the program.
 
+It should be noted that this program interacts in the shell and requires access to the pandas module.
+
 ### Files used
 ###### Python file tracked in remote and local repository:
 * bikeshare.py
