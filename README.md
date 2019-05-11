@@ -5,23 +5,23 @@ March 23, 2019
 Exploring US Bikeshare Data
 
 ### Description
-This project includes a program that demonstrates how python code can interact with a user and perform statistical functions with the "pandas" and "time" packages.  
+This project includes a program that demonstrates how python code can interact with a user and perform statistical functions. Additionally, the conde demonstrates the powerful and streamlined data filtering capabilities of the 'Pandas' library. The code is executed through the following steps:
 
-First, the program allows the user to select data from one of three cities, then filter it further by date and time.  
+- First, the program allows the user to select data from one of three cities, then filter it further by date and time.  
 
-Second, the program asks the user if they would like to see five lines of raw data and if they would like to see more.
+- Second, the program asks the user if they would like to see five lines of raw data and if they would like to see more.
 
-Third, the program performs four statistical functions.
+- Third, the program performs four statistical functions.
 
-Finally, the user may restart or exit the program.
+- Finally, the user may restart or exit the program.
 
-It should be noted that this program interacts in the shell and requires access to the pandas module.
+- It should be noted that this program interacts in the shell and requires access to the pandas module.
 
 ### Files used
 ###### Python file tracked in remote and local repository:
 * bikeshare.py
 
-###### Untracked data files only in local repository:
+###### data files:
 * chicago.csv
 * new_york_city.csv
 * washington.csv
